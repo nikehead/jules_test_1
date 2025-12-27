@@ -24,3 +24,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         alert('서버 오류가 발생했습니다.');
     }
 });
+
+document.getElementById('signupBtn').addEventListener('click', function() {
+    alert('회원가입 기능은 준비 중입니다.');
+});

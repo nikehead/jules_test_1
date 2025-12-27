@@ -71,3 +71,21 @@ input:focus {
 .login-btn:hover {
     background-color: #0056b3;
 }
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #36a420;
+}
