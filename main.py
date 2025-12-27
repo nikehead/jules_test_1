@@ -10,12 +10,19 @@ class LoginRequest(BaseModel):
     username: str
     password: str
 
-# Mount static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# Get the directory of the current file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Mount static files using absolute path
+static_dir = os.path.join(BASE_DIR, "static")
+if not os.path.exists(static_dir):
+    print(f"WARNING: Static directory not found at {static_dir}")
+app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 @app.get("/")
 async def read_root():
-    return FileResponse("index.html")
+    # Serve index.html using absolute path
+    return FileResponse(os.path.join(BASE_DIR, "index.html"))
 
 @app.post("/login")
 async def login(data: LoginRequest):
