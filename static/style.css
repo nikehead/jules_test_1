@@ -77,6 +77,24 @@ input:focus, textarea:focus {
     background-color: #0056b3;
 }
 
+.guest-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 10px;
+}
+
+.guest-btn:hover {
+    background-color: #5a6268;
+}
+
 .signup-btn {
     width: 100%;
     padding: 12px;

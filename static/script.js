@@ -29,3 +29,8 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 document.getElementById('signupBtn').addEventListener('click', function() {
     alert('회원가입 기능은 준비 중입니다.');
 });
+
+document.getElementById('guestBtn').addEventListener('click', function() {
+    alert('비회원으로 로그인합니다.');
+    window.location.href = '/dashboard';
+});
