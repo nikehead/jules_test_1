@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGR SEM 측정 의뢰서</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>NGR (Nano Geometry Research)</h1>
+            <h2>SEM 측정 의뢰서</h2>
+        </header>
+
+        <section class="request-form-section">
+            <h3>새 의뢰 작성</h3>
+            <form id="requestForm">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="requester">의뢰자</label>
+                        <input type="text" id="requester" name="requester" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="sample_name">샘플명</label>
+                        <input type="text" id="sample_name" name="sample_name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="magnification">배율 (Magnification)</label>
+                        <input type="text" id="magnification" name="magnification" placeholder="예: x5000" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="voltage">가속 전압 (kV)</label>
+                        <input type="text" id="voltage" name="voltage" placeholder="예: 15kV" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="description">추가 요청사항 / 설명</label>
+                    <textarea id="description" name="description" rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">의뢰 등록</button>
+            </form>
+        </section>
+
+        <section class="request-list-section">
+            <h3>의뢰 목록</h3>
+            <div class="table-container">
+                <table id="requestsTable">
+                    <thead>
+                        <tr>
+                            <th>의뢰자</th>
+                            <th>샘플명</th>
+                            <th>배율</th>
+                            <th>전압</th>
+                            <th>요청사항</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Requests will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="static/requests.js"></script>
+</body>
+</html>

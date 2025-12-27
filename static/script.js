@@ -16,6 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         if (response.ok) {
             const data = await response.json();
             alert(data.message);
+            window.location.href = '/dashboard';
         } else {
             alert('로그인 실패');
         }
