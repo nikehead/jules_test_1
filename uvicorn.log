@@ -13,3 +13,7 @@ INFO:     127.0.0.1:40986 - "POST /login HTTP/1.1" 200 OK
 INFO:     127.0.0.1:56222 - "GET / HTTP/1.1" 200 OK
 INFO:     127.0.0.1:56222 - "GET /static/style.css HTTP/1.1" 200 OK
 INFO:     127.0.0.1:56230 - "GET /static/script.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34620 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32994 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32994 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33006 - "GET /static/script.js HTTP/1.1" 200 OK
