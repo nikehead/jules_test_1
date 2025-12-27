@@ -36,8 +36,8 @@ app.mount("/static", StaticFiles(directory=static_dir), name="static")
 async def read_root():
     return FileResponse(os.path.join(BASE_DIR, "index.html"))
 
-@app.get("/dashboard")
-async def read_dashboard():
+@app.get("/requests.html")
+async def read_requests():
     return FileResponse(os.path.join(BASE_DIR, "requests.html"))
 
 @app.post("/login")

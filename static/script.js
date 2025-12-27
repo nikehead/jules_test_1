@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         if (response.ok) {
             const data = await response.json();
             alert(data.message);
-            window.location.href = '/dashboard';
+            window.location.href = 'requests.html';
         } else {
             alert('로그인 실패');
         }
@@ -32,5 +32,5 @@ document.getElementById('signupBtn').addEventListener('click', function() {
 
 document.getElementById('guestBtn').addEventListener('click', function() {
     alert('비회원으로 로그인합니다.');
-    window.location.href = '/dashboard';
+    window.location.href = 'requests.html';
 });
